@@ -10,8 +10,9 @@ public class Main {
 
         producer.start();
         consumer.start();
-
-
+        
+        producer.join();
+        consumer.join();
 
     }
 }
